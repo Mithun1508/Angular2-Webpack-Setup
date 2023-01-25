@@ -1,4 +1,4 @@
-# Angular2-Webpack-Setup
+# This code sets up an Angular 2 project with Webpack is a simple way while also providing the configuration for unit testing.
 
 ![Screenshot (67)](https://user-images.githubusercontent.com/93249038/214496097-aabe6083-df02-4bfc-b561-043c6156a1bc.png)
 
@@ -349,4 +349,29 @@ Doing this is very simple — we’ll utilize our installed Node modules to perf
 "test:headless": "karma start ./karma/karma.conf.js --browsers PhantomJS"
 Instead of saying node ./node_modules/tslint/bin/tslint.js, we can just use the name of a package, e.g. karma or tslint. This is because there is a symlink in ./node_modules/.bin to this file which NPM can utilize to run the package. The test task will run the unit tests in both Chrome and PhantomJS, while the test:headless task will run them just in PhantomJS, as specified by the browsers flag.
 
+# How to Run and Test
 
+
+To install all the dependencies run:
+
+npm i
+For single, headless tests use:
+
+npm run test:headless
+To run code in a browser user:
+
+npm start
+Setup for Angular 2 with Webpack
+This is the code setup for the article Setting Up Angular 2 with Webpack
+
+This code sets up an Angular 2 project with Webpack is a simple way while also providing the configuration for unit testing.
+
+To install all the dependencies run:
+
+npm i
+For single, headless tests use:
+
+npm run test:headless
+To run code in a browser user:
+
+npm start
